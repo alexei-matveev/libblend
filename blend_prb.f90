@@ -6,7 +6,7 @@ program main
 !
 !  Discussion:
 !
-!    BLEND_PRB tests routines from BLEND.
+!    BLEND_PRB tests the BLEND library.
 !
 !  Licensing:
 !
@@ -23,7 +23,6 @@ program main
   implicit none
 
   call timestamp ( )
-
   write ( *, '(a)' ) ' '
   write ( *, '(a)' ) 'BLEND_PRB'
   write ( *, '(a)' ) '  FORTRAN90 version'
@@ -48,7 +47,6 @@ program main
   write ( *, '(a)' ) ' '
   write ( *, '(a)' ) 'BLEND_PRB'
   write ( *, '(a)' ) '  Normal end of execution.'
-
   write ( *, '(a)' ) ' '
   call timestamp ( )
 
@@ -96,7 +94,7 @@ subroutine test01 ( )
 !  Test BLEND_R_0DN on identity.
 !
   write ( *, '(a)' ) ' '
-  write ( *, '(a)' ) 'Identity test for BLEND_R_0DN:'
+  write ( *, '(a)' ) '  Identity test for BLEND_R_0DN:'
   write ( *, '(a)' ) ' '
   r = 0.0D+00
   call blend_r_0dn ( r, x, n, identity_r )
@@ -117,7 +115,7 @@ subroutine test01 ( )
 !  Test BLEND_RS_0DN on identity.
 !
   write ( *, '(a)' ) ' '
-  write ( *, '(a)' ) 'Identity test for BLEND_RS_0DN:'
+  write ( *, '(a)' ) '  Identity test for BLEND_RS_0DN:'
   write ( *, '(a)' ) ' '
   r = 0.0D+00
   s = 0.0D+00
@@ -147,7 +145,7 @@ subroutine test01 ( )
 !  Test BLEND_RS_1DN on identity.
 !
   write ( *, '(a)' ) ' '
-  write ( *, '(a)' ) 'Identity test for BLEND_RS_1DN:'
+  write ( *, '(a)' ) '  Identity test for BLEND_RS_1DN:'
   write ( *, '(a)' ) ' '
   r = 0.0D+00
   s = 0.0D+00
@@ -181,7 +179,7 @@ subroutine test01 ( )
 !  Test BLEND_RST_0DN on identity.
 !
   write ( *, '(a)' ) ' '
-  write ( *, '(a)' ) 'Identity test for BLEND_RST_0DN:'
+  write ( *, '(a)' ) '  Identity test for BLEND_RST_0DN:'
   write ( *, '(a)' ) ' '
   r = 0.0D+00
   s = 0.0D+00
@@ -222,7 +220,7 @@ subroutine test01 ( )
 !  Test BLEND_RST_1DN on identity.
 !
   write ( *, '(a)' ) ' '
-  write ( *, '(a)' ) 'Identity test for BLEND_RST_1DN:'
+  write ( *, '(a)' ) '  Identity test for BLEND_RST_1DN:'
   write ( *, '(a)' ) ' '
   r = 0.0D+00
   s = 0.0D+00
@@ -263,7 +261,7 @@ subroutine test01 ( )
 !  Test BLEND_RST_2DN on identity.
 !
   write ( *, '(a)' ) ' '
-  write ( *, '(a)' ) 'Identity test for BLEND_RST_2DN:'
+  write ( *, '(a)' ) '  Identity test for BLEND_RST_2DN:'
   write ( *, '(a)' ) ' '
   r = 0.0D+00
   s = 0.0D+00
@@ -345,7 +343,7 @@ subroutine test02 ( )
 !  Test BLEND_R_0DN on shift by 1, stretch by 2.
 !
   write ( *, '(a)' ) ' '
-  write ( *, '(a)' ) 'Shift and stretch test for BLEND_R_0DN:'
+  write ( *, '(a)' ) '  Shift and stretch test for BLEND_R_0DN:'
   write ( *, '(a)' ) ' '
   r = 0.0D+00
   call blend_r_0dn ( r, x, n, stretch_r )
@@ -366,7 +364,7 @@ subroutine test02 ( )
 !  Test BLEND_RS_0DN on shift by (1,2), stretch by (3,4).
 !
   write ( *, '(a)' ) ' '
-  write ( *, '(a)' ) 'Shift and stretch test for BLEND_RS_0DN:'
+  write ( *, '(a)' ) '  Shift and stretch test for BLEND_RS_0DN:'
   write ( *, '(a)' ) ' '
   r = 0.0D+00
   s = 0.0D+00
@@ -396,7 +394,7 @@ subroutine test02 ( )
 !  Test BLEND_RS_1D on shift by (1,2), stretch by (3,4).
 !
   write ( *, '(a)' ) ' '
-  write ( *, '(a)' ) 'Shift and stretch test for BLEND_RS_1DN:'
+  write ( *, '(a)' ) '  Shift and stretch test for BLEND_RS_1DN:'
   write ( *, '(a)' ) ' '
   r = 0.0D+00
   s = 0.0D+00
@@ -430,7 +428,7 @@ subroutine test02 ( )
 !  Test BLEND_RST_0DN on shift by (1,2,3), stretch by (4,5,6).
 !
   write ( *, '(a)' ) ' '
-  write ( *, '(a)' ) 'Shift and stretch test for BLEND_RST_0DN:'
+  write ( *, '(a)' ) '  Shift and stretch test for BLEND_RST_0DN:'
   write ( *, '(a)' ) ' '
   r = 0.0D+00
   s = 0.0D+00
@@ -471,7 +469,7 @@ subroutine test02 ( )
 !  Test BLEND_RST_1DN on shift by (1,2,3), stretch by (4,5,6).
 !
   write ( *, '(a)' ) ' '
-  write ( *, '(a)' ) 'Shift and stretch test for BLEND_RST_1DN:'
+  write ( *, '(a)' ) '  Shift and stretch test for BLEND_RST_1DN:'
   write ( *, '(a)' ) ' '
   r = 0.0D+00
   s = 0.0D+00
@@ -511,7 +509,7 @@ subroutine test02 ( )
 !  Test BLEND_RST_2DN on shift by (1,2,3), stretch by (4,5,6).
 !
   write ( *, '(a)' ) ' '
-  write ( *, '(a)' ) 'Shift and stretch test for BLEND_RST_2DN:'
+  write ( *, '(a)' ) '  Shift and stretch test for BLEND_RST_2DN:'
   write ( *, '(a)' ) ' '
   r = 0.0D+00
   s = 0.0D+00
@@ -584,7 +582,7 @@ subroutine test03 ( )
   write ( *, '(a)' ) '  BLEND_I_0D1 interpolates data in a vector.'
   write ( *, '(a)' ) ' '
   write ( *, '(a,g14.6)' ) '  X(1) = ', x(1)
-  write ( *, '(a,g14.6)' ) '  X(', m, ')= ', x(m)
+  write ( *, '(a,i2,a,g14.6)' ) '  X(', m, ')= ', x(m)
   write ( *, '(a)' ) ' '
   write ( *, '(a)' ) '  Interpolated values:'
   write ( *, '(a)' ) ' '
@@ -1295,7 +1293,7 @@ subroutine identity_r ( r, i, x )
     write ( *, '(a)' ) ' '
     write ( *, '(a)' ) 'IDENTITY_R - Fatal error!'
     write ( *, '(a,i8)' ) '  Illegal component index I = ', i
-    stop
+    stop 1
   end if
 
   return
@@ -1347,7 +1345,7 @@ subroutine identity_rs ( r, s, i, x )
     write ( *, '(a)' ) ' '
     write ( *, '(a)' ) 'IDENTITY_RS - Fatal error!'
     write ( *, '(a,i8)' ) '  Illegal component index I = ', i
-    stop
+    stop 1
   end if
 
   return
@@ -1402,7 +1400,7 @@ subroutine identity_rst ( r, s, t, i, x )
     write ( *, '(a)' ) ' '
     write ( *, '(a)' ) 'IDENTITY_RST - Fatal error!'
     write ( *, '(a,i8)' ) '  Illegal component index I = ', i
-    stop
+    stop 1
   end if
 
   return
@@ -1451,7 +1449,7 @@ subroutine stretch_r ( r, i, x )
     write ( *, '(a)' ) ' '
     write ( *, '(a)' ) 'STRETCH_R - Fatal error!'
     write ( *, '(a,i8)' ) '  Illegal component index I = ', i
-    stop
+    stop 1
   end if
 
   return
@@ -1503,7 +1501,7 @@ subroutine stretch_rs ( r, s, i, x )
     write ( *, '(a)' ) ' '
     write ( *, '(a)' ) 'STRETCH_RS - Fatal error!'
     write ( *, '(a,i8)' ) '  Illegal component index I = ', i
-    stop
+    stop 1
   end if
 
   return
@@ -1558,7 +1556,7 @@ subroutine stretch_rst ( r, s, t, i, x )
     write ( *, '(a)' ) ' '
     write ( *, '(a)' ) 'STRETCH_RST - Fatal error!'
     write ( *, '(a,i8)' ) '  Illegal component index I = ', i
-    stop
+    stop 1
   end if
 
   return
@@ -1598,7 +1596,7 @@ subroutine ellipse_rs ( r, s, i, x )
   implicit none
 
   integer ( kind = 4 ) i
-  real ( kind = 8 ), parameter :: pi = 3.14159265D+00
+  real ( kind = 8 ), parameter :: pi = 3.141592653589793D+00
   real ( kind = 8 ) r
   real ( kind = 8 ) s
   real ( kind = 8 ) theta
@@ -1627,7 +1625,7 @@ subroutine ellipse_rs ( r, s, i, x )
     write ( *, '(a)' ) ' '
     write ( *, '(a)' ) 'ELLIPSE_RS - Fatal error!'
     write ( *, '(a,i8)' ) '  Illegal component index I = ', i
-    stop
+    stop 1
 
   end if
 
@@ -1702,7 +1700,7 @@ subroutine sphere_rst ( r, s, t, i, x )
     write ( *, '(a)' ) ' '
     write ( *, '(a)' ) 'SPHERE_RST - Fatal error!'
     write ( *, '(a,i8)' ) '  Illegal component index I = ', i
-    stop
+    stop 1
 
   end if
 
@@ -1733,7 +1731,7 @@ subroutine test08 ( )
 
   integer ( kind = 4 ) i
   integer ( kind = 4 ) j
-  real ( kind = 8 ), parameter :: pi = 3.14159265D+00
+  real ( kind = 8 ), parameter :: pi = 3.141592653589793D+00
   real ( kind = 8 ) r(n1)
   real ( kind = 8 ) rad
   real ( kind = 8 ) rr

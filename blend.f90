@@ -561,7 +561,6 @@ subroutine blend_123 ( r, s, t, x000, x001, x010, x011, x100, x101, x110, &
 !
 !! BLEND_123 extends scalar face data into a cube.
 !
-!
 !  Diagram:
 !
 !    010-----r10-----110        011-----r11-----111
