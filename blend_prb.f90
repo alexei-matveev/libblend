@@ -1610,6 +1610,13 @@ subroutine ellipse_rs ( r, s, i, x )
     theta = 0.25D+00 * pi * ( 5.0D+00 * ( 1.0D+00 - r ) + 7.0D+00 * r )
   else if ( s == 1.0D+00 ) then
     theta = 0.25D+00 * pi * ( 3.0D+00 * ( 1.0D+00 - r ) + 1.0D+00 * r )
+  else
+
+    write ( *, '(a)' ) ' '
+    write ( *, '(a)' ) 'ELLIPSE_RS - Fatal error!'
+    write ( *, '(a)' ) '  Coordinates (r, s) not on the boundary of the square.'
+    stop 1
+
   end if
 
   if ( i == 1 ) then
