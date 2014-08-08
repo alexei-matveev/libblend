@@ -1,6 +1,7 @@
 
 FC = gfortran
 RANLIB ?= ranlib
+FFLAGS ?= -O3 -Wall -Wextra -Wconversion
 
 blend_prb: blend_prb.o libblend.a
 	$(FC) $(^) -L./ -lblend -o $(@)
