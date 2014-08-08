@@ -1,6 +1,5 @@
-BLEND 
- Transfinite Interpolation
-==========================
+BLEND: Transfinite Interpolation
+================================
 
 * * * * *
 
