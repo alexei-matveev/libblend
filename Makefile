@@ -17,4 +17,4 @@ test: ./blend_prb blend_prb_output.txt
 	diff blend_prb_output.txt blend_prb_output.txt.1
 
 clean:
-	rm *.o libblend.a blend_prb blend_prb_output.txt.1
+	rm -f *.o libblend.a blend_prb blend_prb_output.txt.1
