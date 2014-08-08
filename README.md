@@ -4,31 +4,68 @@ BLEND
 
 * * * * *
 
-**BLEND** is a FORTRAN90 library which "blends" multidimensional data, that is, performs a kind of interpolation. However, in this case, the data may be known at points, or curves, or planes, and is to be extended to a higher-dimensional domain.
+**BLEND** is a FORTRAN90 library which "blends" multidimensional data,
+that is, performs a kind  of interpolation. However, in this case, the
+data  may be  known at  points, or  curves, or  planes, and  is  to be
+extended to a higher-dimensional domain.
 
-This is a common way of creating a smooth set of data based on a small set of known values. For instance, if we measure the temperature every hour, we naturally assume that the temperature at 2:15 can be approximated by "blending" 1/4 of the temperature at 3:00 and 3/4 of the temperature at 2:00.
+This is a common way of creating a smooth set of data based on a small
+set of known values. For instance, if we measure the temperature every
+hour,  we  naturally  assume  that  the temperature  at  2:15  can  be
+approximated by "blending"  1/4 of the temperature at  3:00 and 3/4 of
+the temperature at 2:00.
 
-Now suppose that we take the temperature at evenly spaced points on the floor of a room. We can again see how to use blending so that, in each little square, we take a blend of the values at the four corners to get the value at any point within the square. Similar ideas can be used with a cube.
+Now suppose  that we take the  temperature at evenly  spaced points on
+the floor of a room. We can  again see how to use blending so that, in
+each little square, we take a  blend of the values at the four corners
+to get the value at any  point within the square. Similar ideas can be
+used with a cube.
 
-More complicated cases might arise where we know the temperature everywhere along lines, or along planes that cut through a cube. Even then, it is possible to blend the data in a smooth and sensible way.
+More  complicated cases  might  arise where  we  know the  temperature
+everywhere along lines, or along  planes that cut through a cube. Even
+then, it is possible to blend the data in a smooth and sensible way.
 
-**BLEND** interpolates values based on a set of given data. **BLEND** can handle input data that is 1, 2, or 3 dimensional. In the general, 3D case, the data can depend on smoothly varying space parameters (R,S,T) or on tabular indices (I,J,K). The data may be given at the corners, edges, or faces of the unit cube. In the (R,S,T) case, **BLEND** can supply an interpolated value at any point in the cube. In the (I,J,K) case, **BLEND** will fill in tabular values for all intermediate indices.
+**BLEND** interpolates values based on  a set of given data. **BLEND**
+can handle input data that is  1, 2, or 3 dimensional. In the general,
+3D  case, the  data can  depend on  smoothly varying  space parameters
+(R,S,T) or  on tabular indices (I,J,K).  The data may be  given at the
+corners,  edges, or  faces  of the  unit  cube. In  the (R,S,T)  case,
+**BLEND**  can  supply an  interpolated  value  at  any point  in  the
+cube. In the  (I,J,K) case, **BLEND** will fill  in tabular values for
+all intermediate indices.
 
-In the simplest case, where **BLEND** is only given data values at the endpoints of a line segment, the 4 corners of a square, or the 8 corners of a cube, **BLEND** is equivalent to linear, bilinear or trilinear finite element interpolation of the data. However, in the more interesting cases where **BLEND** is given, say, a formula for the data along the sides of the square, or the edges of the cube, the interpolation is called "transfinite", since in theory it samples the input data at more than a finite number of points.
+In the simplest case, where **BLEND** is only given data values at the
+endpoints  of a line  segment, the  4 corners  of a  square, or  the 8
+corners  of a  cube, **BLEND**  is equivalent  to linear,  bilinear or
+trilinear finite  element interpolation of  the data. However,  in the
+more interesting  cases where **BLEND**  is given, say, a  formula for
+the data along the sides of the  square, or the edges of the cube, the
+interpolation is called "transfinite",  since in theory it samples the
+input data at more than a finite number of points.
 
 ### Licensing:
 
-The computer code and data files described and made available on this web page are distributed under [the GNU LGPL license.](./LICENSE)
+The computer code and data  files described and made available on this
+web page are distributed under [the GNU LGPL license.](./LICENSE)
 
 ### Languages:
 
-**BLEND** is available in [a C++ version](http://people.sc.fsu.edu/~jburkardt/cpp_src/blend/blend.html) and [a FORTRAN90 version](http://people.sc.fsu.edu/~jburkardt/f_src/blend/blend.html) and [a MATLAB version](http://people.sc.fsu.edu/~jburkardt/m_src/blend/blend.html).
+**BLEND** is available in [a C++
+version](http://people.sc.fsu.edu/~jburkardt/cpp_src/blend/blend.html)
+and [a FORTRAN90
+version](http://people.sc.fsu.edu/~jburkardt/f_src/blend/blend.html)
+and [a MATLAB
+version](http://people.sc.fsu.edu/~jburkardt/m_src/blend/blend.html).
 
 ### Related Data and Programs:
 
-[TILER\_2D](http://people.sc.fsu.edu/~jburkardt/f_src/tiler_2d/tiler_2d.html), a FORTRAN90 program which demonstrates a 2D example of transfinite interpolation.
+[TILER\_2D](http://people.sc.fsu.edu/~jburkardt/f_src/tiler_2d/tiler_2d.html),
+a FORTRAN90 program which demonstrates a 2D example of transfinite
+interpolation.
 
-[TILER\_3D](http://people.sc.fsu.edu/~jburkardt/f_src/tiler_3d/tiler_3d.html), a FORTRAN90 program which demonstrates a 3D example of transfinite interpolation.
+[TILER\_3D](http://people.sc.fsu.edu/~jburkardt/f_src/tiler_3d/tiler_3d.html),
+a FORTRAN90 program which demonstrates a 3D example of transfinite
+interpolation.
 
 ### Reference:
 
