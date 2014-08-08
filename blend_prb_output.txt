@@ -1,4 +1,4 @@
- 9 January 2011   1:29:14.367 PM
+ 8 August 2014  11:28:23.647 PM
  
 BLEND_PRB
   FORTRAN90 version
@@ -7,13 +7,13 @@ BLEND_PRB
 TEST01
   Simple identity test to detect gross errors.
  
-Identity test for BLEND_R_0DN:
+  Identity test for BLEND_R_0DN:
  
   0.0000  0.0000
   1.0000  1.0000
   0.5000  0.5000
  
-Identity test for BLEND_RS_0DN:
+  Identity test for BLEND_RS_0DN:
  
   0.0000  0.0000  0.0000  0.0000
   1.0000  0.0000  1.0000  0.0000
@@ -21,7 +21,7 @@ Identity test for BLEND_RS_0DN:
   1.0000  1.0000  1.0000  1.0000
   0.5000  0.5000  0.5000  0.5000
  
-Identity test for BLEND_RS_1DN:
+  Identity test for BLEND_RS_1DN:
  
   0.0000  0.0000  0.0000  0.0000
   1.0000  0.0000  1.0000  0.0000
@@ -29,7 +29,7 @@ Identity test for BLEND_RS_1DN:
   1.0000  1.0000  1.0000  1.0000
   0.5000  0.5000  0.5000  0.5000
  
-Identity test for BLEND_RST_0DN:
+  Identity test for BLEND_RST_0DN:
  
   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
   1.0000  0.0000  0.0000  1.0000  0.0000  0.0000
@@ -38,7 +38,7 @@ Identity test for BLEND_RST_0DN:
   1.0000  1.0000  1.0000  1.0000  1.0000  1.0000
   0.5000  0.5000  0.5000  0.5000  0.5000  0.5000
  
-Identity test for BLEND_RST_1DN:
+  Identity test for BLEND_RST_1DN:
  
   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
   1.0000  0.0000  0.0000  1.0000  0.0000  0.0000
@@ -47,7 +47,7 @@ Identity test for BLEND_RST_1DN:
   1.0000  1.0000  1.0000  1.0000  1.0000  1.0000
   0.5000  0.5000  0.5000  0.5000  0.5000  0.5000
  
-Identity test for BLEND_RST_2DN:
+  Identity test for BLEND_RST_2DN:
  
   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
   1.0000  0.0000  0.0000  1.0000  0.0000  0.0000
@@ -59,13 +59,13 @@ Identity test for BLEND_RST_2DN:
 TEST02
   Shift and stretch test to detect simple errors.
  
-Shift and stretch test for BLEND_R_0DN:
+  Shift and stretch test for BLEND_R_0DN:
  
   0.0000  1.0000
   1.0000  3.0000
   0.5000  2.0000
  
-Shift and stretch test for BLEND_RS_0DN:
+  Shift and stretch test for BLEND_RS_0DN:
  
   0.0000  0.0000  1.0000  2.0000
   1.0000  0.0000  4.0000  2.0000
@@ -73,7 +73,7 @@ Shift and stretch test for BLEND_RS_0DN:
   1.0000  1.0000  4.0000  6.0000
   0.5000  0.5000  2.5000  4.0000
  
-Shift and stretch test for BLEND_RS_1DN:
+  Shift and stretch test for BLEND_RS_1DN:
  
   0.0000  0.0000  1.0000  2.0000
   1.0000  0.0000  4.0000  2.0000
@@ -81,7 +81,7 @@ Shift and stretch test for BLEND_RS_1DN:
   1.0000  1.0000  4.0000  6.0000
   0.5000  0.5000  2.5000  4.0000
  
-Shift and stretch test for BLEND_RST_0DN:
+  Shift and stretch test for BLEND_RST_0DN:
  
   0.0000  0.0000  0.0000  1.0000  2.0000  3.0000
   1.0000  0.0000  0.0000  5.0000  2.0000  3.0000
@@ -90,7 +90,7 @@ Shift and stretch test for BLEND_RST_0DN:
   1.0000  1.0000  1.0000  5.0000  7.0000  9.0000
   0.5000  0.5000  0.5000  3.0000  4.5000  6.0000
  
-Shift and stretch test for BLEND_RST_1DN:
+  Shift and stretch test for BLEND_RST_1DN:
  
   0.0000  0.0000  0.0000  1.0000  2.0000  3.0000
   1.0000  0.0000  0.0000  5.0000  2.0000  3.0000
@@ -99,7 +99,7 @@ Shift and stretch test for BLEND_RST_1DN:
   1.0000  1.0000  1.0000  5.0000  7.0000  9.0000
   0.5000  0.5000  0.5000  3.0000  4.5000  6.0000
  
-Shift and stretch test for BLEND_RST_2DN:
+  Shift and stretch test for BLEND_RST_2DN:
  
   0.0000  0.0000  0.0000  1.0000  2.0000  3.0000
   1.0000  0.0000  0.0000  5.0000  2.0000  3.0000
@@ -112,8 +112,7 @@ TEST03
   BLEND_I_0D1 interpolates data in a vector.
  
   X(1) =    100.000    
-  X(             5
-)=    120.000    
+  X( 5)=    120.000    
  
   Interpolated values:
  
@@ -449,7 +448,6 @@ TEST09
     4    0.00000       0.00000       0.00000       0.00000       0.00000    
     5    6.00000       0.00000       0.00000       0.00000       10.0000    
  
- 
   Interpolated data array
  
   Col         1             2             3             4             5       
@@ -460,7 +458,6 @@ TEST09
     3    4.00000       5.00000       6.00000       7.00000       8.00000    
     4    5.00000       6.00000       7.00000       8.00000       9.00000    
     5    6.00000       7.00000       8.00000       9.00000       10.0000    
- 
  
 TEST10
   BLEND_112 blends side values into a table.
@@ -477,7 +474,6 @@ TEST10
     4    5.00000       0.00000       0.00000       0.00000       9.00000    
     5    6.00000       7.00000       8.00000       9.00000       10.0000    
  
- 
   Interpolated data array
  
   Col         1             2             3             4             5       
@@ -488,7 +484,6 @@ TEST10
     3    4.00000       5.00000       6.00000       7.00000       8.00000    
     4    5.00000       6.00000       7.00000       8.00000       9.00000    
     5    6.00000       7.00000       8.00000       9.00000       10.0000    
- 
  
 TEST11
   BLEND_103 blends corner values into a table.
@@ -733,4 +728,4 @@ TEST13
 BLEND_PRB
   Normal end of execution.
  
- 9 January 2011   1:29:14.370 PM
+ 8 August 2014  11:28:23.651 PM
